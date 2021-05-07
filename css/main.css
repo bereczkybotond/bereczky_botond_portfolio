@@ -1,0 +1,281 @@
+body{
+	font size: 16px;
+	font-family: 'Cabin', sans-serif;
+	font-weight: 400;
+	background-color: #87a7b3;
+}
+
+*, *::before, *::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	max-width: 100%;
+}
+
+/*--layout--*/
+	body{
+		display: grid;
+		grid-template-areas: 
+		"fejlec"
+		"kontent"
+		"lablec";
+		grid-template-rows: max-content 1fr max-content;
+		min-height: 100vh;
+	}
+
+	header{
+		background-color: #546870;
+		grid-area: fejlec;
+		border-bottom: 2px solid #eeebdd;
+	}
+
+	main{
+		background-color: #eeebdd;
+		grid-area: kontent;
+		-webkit-box-shadow: 0px 0px 9px 9px #6C8791; 
+		box-shadow: 0px 0px 9px 9px #6C8791;
+	}
+
+	footer{
+		background-color: #546870;
+		grid-area: lablec;
+		border-top: 2px solid #eeebdd;
+	}
+/*--layout_end--*/
+
+a{
+	text-decoration: none;
+	color: #000000;
+}
+
+/*azonos header*/
+	header{
+
+	}
+
+	.gomb{
+		
+		display: inline-block;
+		margin: 0.5rem;
+		margin-right: 0rem;
+		margin-left: 1rem;
+		padding: .25rem  3rem;
+		cursor: pointer;
+		background-color: #546870;
+		font-weight: 600;
+		color: #eeebdd;
+		border: 2px solid #eeebdd;
+	}
+
+	.gomb:hover{
+		background-color: #87a7b3;
+		
+	}
+
+
+/*azonos header_end*/
+
+
+.fooldal {
+	background-color: #eeebdd;
+	border: 1px solid #eeebdd;
+	margin-right: 1%;
+	margin-left: 1%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding: 2rem;
+}
+
+.fooldal_kep{
+	max-width: 40%;
+	min-width: 280px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	-webkit-box-shadow: 0px 0px 9px 9px #89877F; 
+	box-shadow: 0px 0px 9px 9px #89877F;
+
+}	
+
+.udvozlo{
+	text-align: center;
+}
+
+.cim{
+	font-size: 3rem;
+	font-weight: 500;
+	line-height: 3rem;
+	background-color: #87a7b3;
+	padding:.5rem;
+	border: 1px #87a7b3;
+	
+
+}
+
+.span{
+	font-size: 2rem;
+	font-style: italic;
+	border-top: 2px solid black;
+	padding-left: 25%;
+	padding-right: 25%;
+}
+
+.szoveg{
+	font-size: 20px;
+	background-color: #87a7b3;
+	padding:.5rem;
+	border: 1px #87a7b3;
+}
+
+/*--footer--*/
+	.alsogomb{
+		display: inline-flex;
+		float: right;
+		border: 2px solid #eeebdd;
+		display: inline-block;
+		margin: 0.5rem;
+		margin-top: 0.9rem;
+		padding: .25rem 1rem;
+		cursor: pointer;
+		margin-right: 2rem;
+		font-weight: 600;
+		color: #eeebdd;
+
+	}
+	.alsogomb:hover{
+		background-color: #87a7b3;
+
+	}
+
+
+	.footer_kep{
+		display: inline-block;
+		max-width: 2.5rem;
+		max-height: 2.5rem;
+		margin: .5rem;
+		margin-left: 1rem;
+		margin-right: 0rem;
+		cursor: pointer;
+		border-radius: .5rem;
+	}
+
+	.footer_kep:hover{
+		background-color: #87a7b3;
+		-webkit-box-shadow: 0px 0px 8px 3px rgba(170,170,170,0.85); 
+		box-shadow: 0px 0px 8px 3px rgba(170,170,170,0.85);
+	}
+
+/*--footer_end--*/
+
+/*-------------------------------------------*/
+.rolam{
+	background-color: #eeebdd;
+	border: 1px solid #eeebdd;
+	margin-right: 1%;
+	margin-left: 1%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding: 5%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	grid-gap: 5%;
+	grid-row-gap: 2rem;
+}
+
+.bal_grid{
+	text-align: center;
+}
+
+.rolam_kep{
+	max-width: 40%;
+	min-width: 15rem;
+	-webkit-box-shadow: 0px 0px 9px 9px #89877F; 
+	box-shadow: 0px 0px 9px 9px #89877F;
+
+}
+
+.leiras_rolam{
+	background-color: #87a7b3;
+	font-size: 21px;
+	padding: 5%;
+
+}
+
+.email{
+	margin-left: 2rem;
+}
+.link{
+	text-decoration: underline;
+}
+
+/*-----------------------------------------*/
+
+
+.projektek{
+	background-color: #eeebdd;
+	border: 1px solid #eeebdd;
+	margin-right: 1%;
+	margin-left: 1%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding: 5%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	grid-gap: 2%;
+
+}
+
+.kartya{
+	background-color: #87a7b3;
+	padding: 5%;
+	font-size: 20px;
+
+}
+
+.youtube{
+	background-color: #FF2C2C;
+	font-style: italic;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 1rem;
+	text-align: center;
+}
+
+/*----------------------------------------------*/
+
+.dokumentacio{
+	background-color: #eeebdd;
+	border: 1px solid #eeebdd;
+	margin-right: 1%;
+	margin-left: 1%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding: 5%;
+}
+
+.kep_grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	grid-gap: 2%;
+}
+
+.kepalairas{
+	font-style: italic;
+	text-align: center;
+}
+
+.leiras{
+	margin-top: 2rem;
+	font-size: 18px;
+}
+
+.linkek{
+	font-style: italic;
+	text-decoration: underline;
+	margin-left: 2rem;
+}
